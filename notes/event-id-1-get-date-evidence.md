@@ -2,7 +2,7 @@
 
 ## Evidence Source
 
-Saved Wazuh Discover export from the project investigation. The relevant Sysmon Event ID 1 fields are reproduced below for review. It documents the earlier process-creation test before the separate TCP port 8080 network test.
+Saved Wazuh Discover export from the project investigation. The relevant Sysmon Event ID 1 fields are reproduced below for review. It documents a separate process-creation event. The available evidence does not establish its chronological relationship to the TCP port 8080 network event.
 
 ## Event Summary
 
@@ -40,7 +40,7 @@ ParentUser: MSEDGEWIN10\\IEUser
 
 ## Interpretation
 
-This record directly supports that Sysmon recorded the PowerShell `Get-Date` process creation and that Wazuh produced alert rule `92027` for the event. The command was used to inspect the Windows date/time as part of investigating timestamp handling.
+This record directly supports that Sysmon recorded the PowerShell `Get-Date` process creation and that Wazuh produced alert rule `92027` for the event. The command was used to inspect the Windows date/time as part of investigating timestamp handling. The available evidence does not establish whether this event occurred before or after the separate TCP port 8080 network event.
 
 The Sysmon `UtcTime` and Wazuh alert timestamp are both preserved as exported. They should not be silently treated as identical clocks or used to infer more than the evidence supports.
 
