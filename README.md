@@ -93,6 +93,8 @@ The project distinguishes between:
 
 Archived events are not necessarily security alerts. A successful investigation therefore requires distinguishing event ingestion from rule matching and alert generation.
 
+Supporting evidence for a separate Sysmon Event ID 1 process-creation event is documented in [Event ID 1: Get-Date process evidence](notes/event-id-1-get-date-evidence.md). This record is distinct from the Event ID 3 network-connection investigation above.
+
 ## Findings
 
 - The Windows endpoint was connected to Wazuh.
