@@ -134,6 +134,12 @@ Further work would include resolving the custom rule's live matching behaviour, 
 
 *Formatted evidence of the archived Sysmon Event ID 3 record. This confirms event ingestion and indexing, not successful custom-rule alerting.*
 
+## Investigation Timeline
+
+The timeline records the confirmed stages of the investigation, links each finding to supporting evidence, and preserves the difference between the Wazuh archive timestamp and the embedded Sysmon event time.
+
+[Read the investigation timeline](notes/investigation-timeline.md)
+
 ## Tools and Technologies
 
 - VMware
