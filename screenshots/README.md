@@ -1,14 +1,17 @@
 # Project Evidence Screenshots
 
-This folder contains screenshots documenting the Windows endpoint investigation lab.
+This folder contains evidence supporting the Windows Endpoint Detection and Investigation project.
 
-Planned evidence includes:
+## Evidence Index
 
-- Wazuh endpoint registration and agent status.
-- Sysmon baseline telemetry.
-- Controlled network connectivity testing.
-- Archived Sysmon network events in Wazuh.
-- Custom detection rule configuration and troubleshooting.
-- Investigation findings and timeline, where supported by collected evidence.
+- `02-wazuh-endpoint-connected.png` — Wazuh agent registration and endpoint status.
+- `03-sysmon-baseline-recent.png` — Recent Sysmon process-creation and DNS-query telemetry.
+- `04-sysmon-network-event-record.png` — Formatted evidence derived from an archived Sysmon Event ID 3 record.
 
-Screenshots will be selected and labelled to demonstrate verified results. Sensitive information will be excluded.
+## Evidence Interpretation
+
+The evidence demonstrates endpoint connectivity, Sysmon telemetry generation, and the presence of a controlled network-connection event in Wazuh archives.
+
+The archived network event confirms telemetry ingestion and indexing; it does not prove that the intended custom Wazuh alert was generated.
+
+Evidence is presented to support verified findings and distinguish confirmed results from unresolved detection issues.
