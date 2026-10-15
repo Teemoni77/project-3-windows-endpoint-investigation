@@ -42,15 +42,14 @@ The lab uses the `192.168.200.0/24` network.
 
 The Windows endpoint is registered with Wazuh as agent `004`, named `MSEDGEWIN10`. The agent was observed in the Active state, and both the Wazuh agent and Sysmon services were running.
 
-Sysmon telemetry examined during the project included:
+The investigation documented in this repository focuses on these Sysmon event types:
 
-- **Event ID 1:** Process creation.
-- **Event ID 3:** Network connection.
-- **Event ID 11:** File creation.
-- **Event ID 13:** Registry value set.
-- **Event ID 22:** DNS query.
+- **Event ID 1:** Process creation — examined through a PowerShell process-creation event and baseline telemetry.
+- **Event ID 3:** Network connection — examined through the controlled TCP port 8080 test and the corresponding archived event.
 
-These event types provide useful context for investigating endpoint execution and network behaviour. Their presence alone does not establish malicious activity.
+The baseline evidence also includes **Event ID 22 (DNS query)**, but it was not investigated in depth as a separate case. Event IDs 11 (file creation) and 13 (registry value set) are not included as investigated findings because the current repository evidence does not document a focused examination of those events.
+
+The presence of a Sysmon event alone does not establish malicious activity.
 
 ## Controlled Network Investigation
 
