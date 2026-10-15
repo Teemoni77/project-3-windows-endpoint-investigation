@@ -67,6 +67,17 @@ The corresponding Sysmon Event ID 3 was found in Wazuh's archived event data. Th
 - Initiated: `false`
 
 This demonstrates that endpoint network telemetry was collected and could be examined through Wazuh's indexed archive data.
+### Evidence: Sysmon Network Connection (Event ID 3)
+
+The archived Sysmon record confirms that Wazuh received and indexed a Windows network-connection event associated with a controlled connectivity test from Kali Linux to the Windows endpoint on TCP port 8080.
+
+- **Source:** `192.168.200.10` (Kali Linux)
+- **Destination:** `192.168.200.103:8080` (Windows endpoint)
+- **Process:** PowerShell
+- **Sysmon Event ID:** `3`
+- **Evidence:** [View the archived network-event record](screenshots/04-sysmon-network-event-record.png)
+
+**Detection limitation:** The event was archived and indexed, but the intended custom Wazuh alert was not successfully demonstrated. This remains an unresolved item in the investigation.
 
 The test was controlled lab activity, not evidence of an external compromise.
 
