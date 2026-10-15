@@ -2,7 +2,7 @@
 
 ## Evidence Source
 
-This record was found in the saved Wazuh Discover export `wazuh-discovery.txt` from the project work. It documents the earlier process-creation test before the separate TCP port 8080 network test.
+Saved Wazuh Discover export from the project investigation. The relevant Sysmon Event ID 1 fields are reproduced below for review. It documents the earlier process-creation test before the separate TCP port 8080 network test.
 
 ## Event Summary
 
@@ -48,4 +48,4 @@ This is a separate process-creation event from the later Sysmon Event ID 3 TCP p
 
 ## Original Evidence
 
-The source export is `wazuh-discovery.txt`, saved during the project investigation. This Markdown record transcribes the relevant fields so the event can be reviewed from the repository.
+The relevant fields are transcribed from a saved Wazuh Discover export captured during the investigation. They document the original event details for review.
