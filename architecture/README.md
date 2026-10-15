@@ -22,4 +22,6 @@ The lab uses an isolated virtual network on `192.168.200.0/24`.
 
 ## Architecture Diagram
 
-See the committed lab architecture diagram in this folder for the environment layout and component relationships.
+[View the lab architecture diagram](01-lab-environment.png)
+
+The diagram shows the virtual lab environment and the relationships between its network and security-monitoring components.
