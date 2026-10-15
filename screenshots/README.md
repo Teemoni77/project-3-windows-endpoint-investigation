@@ -5,7 +5,8 @@ This folder contains evidence supporting the Windows Endpoint Detection and Inve
 ## Evidence Index
 
 - `02-wazuh-endpoint-connected.png` — Wazuh agent registration and endpoint status.
-- `03-sysmon-baseline-recent.png` — Recent Sysmon process-creation and DNS-query telemetry.
+- `03-sysmon-baseline-recent.png` — Recent Sysmon process-creation and DNS-query telemetry; this is the baseline image embedded in the main README.
+- `03-Sysmon-Baseline-Process-Creation.png` — Earlier baseline screenshot retained as historical supporting evidence.
 - `04-sysmon-network-event-record.png` — Formatted evidence derived from an archived Sysmon Event ID 3 record.
 
 ## Evidence Interpretation
