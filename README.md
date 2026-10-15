@@ -110,6 +110,30 @@ The investigation also does not establish that the observed activity was malicio
 
 Further work would include resolving the custom rule's live matching behaviour, validating successful alert generation, and extending the investigation with additional correlated endpoint events where supported by evidence.
 
+## Evidence Gallery
+
+### Lab Architecture
+
+[View the lab architecture diagram](architecture/01-lab-environment.png)
+
+### Endpoint Monitoring
+
+![Wazuh endpoint connected](screenshots/02-wazuh-endpoint-connected.png)
+
+*Wazuh agent registration and endpoint status.*
+
+### Sysmon Baseline Telemetry
+
+![Recent Sysmon baseline telemetry](screenshots/03-sysmon-baseline-recent.png)
+
+*Recent endpoint process-creation and DNS-query telemetry.*
+
+### Archived Network Event
+
+![Sysmon network event record](screenshots/04-sysmon-network-event-record.png)
+
+*Formatted evidence of the archived Sysmon Event ID 3 record. This confirms event ingestion and indexing, not successful custom-rule alerting.*
+
 ## Tools and Technologies
 
 - VMware
